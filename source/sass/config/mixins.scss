@@ -1,0 +1,29 @@
+// Миксин для определения плотности пикселей на экране
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+// Миксин для декоративных кругов
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+
+  background-color: $color;
+  border-radius: 50%;
+}
+
+// Миксин для кросбраузерной стилизации placeholder
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
