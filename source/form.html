@@ -14,7 +14,6 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body class="page">
-    <h1 class="visually-hidden">Food Family - готовая еда на неделю</h1>
     <!-- HEADER -->
     <header class="header">
       <div class="wrapper header__wrapper">
@@ -33,6 +32,43 @@
     </header>
     <!-- HEADER END-->
     <!-- FORM -->
-
+    <section class="order">
+      <div class="wrapper order__wrapper">
+        <h1 class="visually-hidden">Страница с формой заказа еды от Food Family</h1>
+        <article class="order__form">
+          <h2 class="order__title">Форма заказа</h2>
+          <p class="order__text">Вы уже совсем близко к своей корзине продуктов на неделю! Заполните форму ниже и наш менеджер свяжется с Вами для уточнения деталей заказа!</p>
+          <form class="form" action="http://echo.htmlacademy.ru">
+            <ul class="order__list">
+              <li class="order__item">
+                <p class="order__product">
+                  <svg class="order__icon" width="20" height="20" aria-label="Декоративная иконка">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                  Малая корзина 4 кг</p>
+                <p class="order__cost">1990 ₽ (+350 ₽ доставка)</p>
+              </li>
+            </ul>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label">
+                  Имя <span class="form__symbol">*</span>
+                  <input class="form__input" type="text" name="user-name" placeholder="Введите ваше имя" required>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label">
+                  Телефон <span class="form__symbol">*</span>
+                  <input class="form__input" type="tel" name="user-phone" placeholder="+7 (___) ___ __ __" required>
+                </label>
+              </li>
+            </ul>
+            <p class="order__description">После оформления заказа менеджер свяжется с Вами по указанному номеру</p>
+            <button class="form__button" type="submit">Оформить заказ</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- FORM END-->
   </body>
 </html>
