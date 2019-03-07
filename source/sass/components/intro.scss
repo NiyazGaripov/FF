@@ -1,0 +1,59 @@
+.intro {
+  padding-top: 190px;
+  padding-bottom: 55px;
+
+  color: $white;
+
+  background-color: $darkblue;
+  background-image: url("../img/intro-bcg-tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: 768px auto;
+  background-position: top center;
+
+  @include retina() {
+    background-image: url("../img/intro-bcg-tablet@2x.jpg");
+  }
+}
+
+.intro__wrapper {
+  position: relative;
+}
+
+.intro__content {
+  width: 272px;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.intro__slogan {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 20px;
+}
+
+.intro__img {
+  position: absolute;
+  top: -190px;
+  right: 0;
+  left: 0;
+
+  margin: 0 auto;
+  width: 272px;
+  height: 175px;
+
+  background-image: url("../img/intro-dish-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-position: top center;
+
+  @include retina() {
+    background-image: url("../img/intro-dish-mobile@2x.png");
+  }
+}
