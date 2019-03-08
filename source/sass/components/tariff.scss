@@ -1,0 +1,105 @@
+.tariff {
+  padding: 40px 0;
+
+  color: $white;
+  text-align: center;
+
+  background-color: $darkblue;
+  background-image: url("../img/common-bcg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @include retina() {
+    background-image: url("../img/common-bcg-mobile@2x.jpg");
+  }
+}
+
+.tariff__desc {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+.tariff__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.tariff__list {
+  @include list;
+  margin: 0 auto;
+  width: 272px;
+}
+
+.tariff__item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tariff__card {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding: 24px 16px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 24px 0 rgba(69, 90, 100, 0.16);
+  backdrop-filter: blur(4px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tariff__decore {
+  position: absolute;
+  top: 16px;
+
+  width: 48px;
+  height: 48px;
+}
+
+.tariff__picture {
+  margin-bottom: 10px;
+}
+
+.tariff__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tariff__price-number {
+  margin-right: 10px;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.tariff__price-currency {
+  font-size: 16px;
+}
+
+.tariff__link {
+  padding: 12px;
+  box-sizing: border-box;
+  width: 135px;
+}
+
+.tariff__delivery {
+  margin: 0;
+}
