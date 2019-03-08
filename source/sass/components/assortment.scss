@@ -1,0 +1,73 @@
+.assortment {
+  padding-top: 40px;
+  padding-bottom: 55px;
+
+  color: $white;
+  text-align: center;
+
+  background-color: $darkblue;
+  background-image: url("../img/common-bcg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @include retina() {
+    background-image: url("../img/common-bcg-mobile@2x.jpg");
+  }
+}
+
+.assortment__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.assortment__desc {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.assortment__text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.assortment__list {
+  @include list;
+  margin: 0 auto;
+  width: 272px;
+}
+
+.assortment__item {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding: 24px 16px 15px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 24px 0 rgba(69, 90, 100, 0.16);
+  backdrop-filter: blur(4px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.assortment__decore {
+  position: absolute;
+  top: 16px;
+
+  width: 48px;
+  height: 48px;
+}
