@@ -1,0 +1,100 @@
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 55px;
+
+  text-align: center;
+
+  background-color: $darkblue;
+  background-image: url("../img/common-bcg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @include retina() {
+    background-image: url("../img/common-bcg-mobile@2x.jpg");
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
+  color: $white;
+}
+
+.advantages__info {
+  padding: 35px 18px 40px;
+
+  background-color: $white;
+
+  border-radius: 12px;
+}
+
+.advantages__approach {
+  padding-top: 105px;
+
+  background-image: url("../img/main-logo.png");
+  background-repeat: no-repeat;
+  background-size: 88px 88px;
+  background-position: top center;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.advantages__desc {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-size: 16px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 15px;
+    bottom: -28px;
+    left: 15px;
+
+    height: 1px;
+
+    background-color: $darkgray;
+
+    opacity: 0.5;
+  }
+}
+
+.advantages__list {
+  @include list;
+  text-align: left;
+}
+
+.advantages__item {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 33px;
+
+  font-size: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
