@@ -1,0 +1,55 @@
+.delivery {
+  padding: 55px 0;
+}
+
+.delivery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include list;
+  margin-bottom: 40px;
+}
+
+.delivery__item {
+  margin-bottom: 50px;
+  width: 200px;
+
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.delivery__text {
+  margin: 0;
+
+  font-size: 16px;
+
+  &--short {
+    padding: 0 10px;
+  }
+}
+
+.delivery__order {
+  text-align: center;
+}
+
+.delivery__slogan {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+.delivery__icon {
+  margin-bottom: 25px;
+}
+
+.delivery__link {
+  margin: 0 auto;
+  width: 188px;
+}
