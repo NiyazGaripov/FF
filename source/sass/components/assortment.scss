@@ -136,6 +136,10 @@
       margin-bottom: 15px;
     }
   }
+
+  @media ($tablet) {
+    width: 280px;
+  }
 }
 
 .assortment__decore {
