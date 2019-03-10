@@ -9,6 +9,10 @@
     padding-top: 25px;
     padding-bottom: 45px;
   }
+
+  @media ($desktop) {
+    padding: 55px 0;
+  }
 }
 
 .footer__wrapper {
