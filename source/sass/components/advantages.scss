@@ -23,6 +23,14 @@
       background-image: url("../img/common-bcg-tablet@2x.jpg");
     }
   }
+
+  @media ($desktop) {
+    background-image: url("../img/common-bcg-desktop.jpg");
+
+    @include retina() {
+      background-image: url("../img/common-bcg-desktop@2x.jpg");
+    }
+  }
 }
 
 .advantages__text {
@@ -40,6 +48,10 @@
 
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media ($desktop) {
+    width: 1000px;
   }
 }
 
@@ -59,6 +71,11 @@
     box-sizing: border-box;
     max-width: 800px;
     min-height: 380px;
+  }
+
+  @media ($desktop) {
+    padding-right: 52px;
+    padding-left: 52px;
   }
 }
 
