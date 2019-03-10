@@ -1,5 +1,10 @@
 .about {
   padding: 40px 0;
+
+  @media ($tablet) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
 }
 
 .about__title {
@@ -8,6 +13,14 @@
 
   font-size: 28px;
   text-align: center;
+
+  @media ($tablet) {
+    margin-bottom: 80px;
+
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
 }
 
 .about__list {
@@ -16,6 +29,10 @@
   justify-content: center;
 
   @include list;
+
+  @media ($tablet) {
+    margin-bottom: 50px;
+  }
 }
 
 .about__item {
@@ -23,6 +40,18 @@
   width: 200px;
 
   text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media ($tablet) {
+    margin: 0 10px 50px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .about__text {
@@ -33,4 +62,9 @@
 
 .about__link {
   display: none;
+
+  @media ($tablet) {
+    display: block;
+    width: 230px;
+  }
 }
