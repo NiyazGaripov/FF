@@ -23,6 +23,14 @@
       background-image: url("../img/tariff-bcg-tablet@2x.jpg");
     }
   }
+
+  @media ($desktop) {
+    background-image: url("../img/tariff-bcg-desktop.jpg");
+
+    @include retina() {
+      background-image: url("../img/tariff-bcg-desktop@2x.jpg");
+    }
+  }
 }
 
 .tariff__desc {
@@ -69,6 +77,10 @@
     flex-wrap: wrap;
     width: auto;
   }
+
+  @media ($desktop) {
+    width: 900px;
+  }
 }
 
 .tariff__item {
@@ -84,6 +96,10 @@
 
   @media ($tablet) {
     width: 30%;
+  }
+
+  @media ($desktop) {
+    width: 280px;
   }
 }
 
