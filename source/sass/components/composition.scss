@@ -13,6 +13,10 @@
   background-color: rgba(69, 90, 100, 0.9);
 
   border-radius: 8px;
+
+  @media ($tablet) {
+    padding: 25px 24px;
+  }
 }
 
 .composition__title {
