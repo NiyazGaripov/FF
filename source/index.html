@@ -49,11 +49,11 @@
           </ul>
         </nav>
         <div class="header__info">
-          <div class="phone">
-            <svg class="phone__icon" width="18" height="18">
+          <div class="header__phone">
+            <svg class="header__phone-icon" width="18" height="18">
               <use xlink:href="img/sprite.svg#phone"></use>
             </svg>
-            <a class="phone__link" href="tel:8-495-005-32-59">8-495-005-32-59</a>
+            <a class="header__phone-link" href="tel:8-495-005-32-59">8-495-005-32-59</a>
           </div>
           <a class="link header__link" href="#">Попробовать сейчас</a>
         </div>
@@ -79,7 +79,7 @@
         <ul class="about__list">
           <li class="about__item">
             <div class="page__circle">
-              <svg class="page__icon" width="78" height="69" viewBox="0 0 107 96" aria-label="Декоративная иконка">
+              <svg class="page__icon page__icon--food" width="78" height="69" viewBox="0 0 107 96" aria-label="Декоративная иконка">
                 <use xlink:href="img/sprite.svg#food"></use>
               </svg>
             </div>
@@ -87,7 +87,7 @@
           </li>
           <li class="about__item">
             <div class="page__circle">
-              <svg class="page__icon" width="65" height="75" viewBox="0 0 89 107" aria-label="Декоративная иконка">
+              <svg class="page__icon page__icon--family" width="65" height="75" viewBox="0 0 89 107" aria-label="Декоративная иконка">
                 <use xlink:href="img/sprite.svg#family"></use>
               </svg>
             </div>
@@ -95,7 +95,7 @@
           </li>
           <li class="about__item">
             <div class="page__circle">
-              <svg class="page__icon" width="80" height="80" viewBox="0 0 107 103" aria-label="Декоративная иконка">
+              <svg class="page__icon page__icon--microelements" width="80" height="80" viewBox="0 0 107 103" aria-label="Декоративная иконка">
                 <use xlink:href="img/sprite.svg#microelements"></use>
               </svg>
             </div>
@@ -103,7 +103,7 @@
           </li>
           <li class="about__item">
             <div class="page__circle">
-              <svg class="page__icon" width="75" height="80" viewBox="0 0 104 86" aria-label="Декоративная иконка">
+              <svg class="page__icon page__icon--delivery-time" width="75" height="80" viewBox="0 0 104 86" aria-label="Декоративная иконка">
                 <use xlink:href="img/sprite.svg#delivery-time"></use>
               </svg>
             </div>
@@ -111,7 +111,7 @@
           </li>
           <li class="about__item">
             <div class="page__circle">
-              <svg class="page__icon" width="72" height="75" viewBox="0 0 99 99" aria-label="Декоративная иконка">
+              <svg class="page__icon page__icon--salad" width="72" height="75" viewBox="0 0 99 99" aria-label="Декоративная иконка">
                 <use xlink:href="img/sprite.svg#salad"></use>
               </svg>
             </div>
@@ -750,7 +750,7 @@
     <section class="reviews">
       <div class="wrapper reviews__wrapper">
         <h2 class="visually-hidden">Отзывы покупателей</h2>
-        <p class="reviews__text">Больше отзывов по хэштегу <span class="page__text">FoodFamily</span></p>
+        <p class="reviews__text">Больше отзывов по&nbsp;хэштегу <span class="page__text">FoodFamily</span></p>
         <div class="slider">
           <button class="slider__contol slider__contol--prev" type="button" aria-label="Кнопка переключения слайда влево"></button>
           <button class="slider__contol slider__contol--next" type="button" aria-label="Кнопка переключения слайда вправо"></button>
@@ -836,7 +836,7 @@
       <ul class="delivery__list">
         <li class="delivery__item">
           <div class="page__circle">
-            <svg class="page__icon" width="74" height="74" viewBox="0 0 102 102" aria-label="Декоративная иконка">
+            <svg class="page__icon page__icon--house" width="74" height="74" viewBox="0 0 102 102" aria-label="Декоративная иконка">
               <use xlink:href="img/sprite.svg#house"></use>
             </svg>
           </div>
@@ -844,7 +844,7 @@
         </li>
         <li class="delivery__item">
           <div class="page__circle">
-            <svg class="page__icon" width="78" height="69" viewBox="0 0 107 96" aria-label="Декоративная иконка">
+            <svg class="page__icon page__icon--food" width="78" height="69" viewBox="0 0 107 96" aria-label="Декоративная иконка">
               <use xlink:href="img/sprite.svg#food"></use>
             </svg>
           </div>
@@ -852,7 +852,7 @@
         </li>
         <li class="delivery__item">
           <div class="page__circle">
-            <svg class="page__icon" width="87" height="70" viewBox="0 0 120 96" aria-label="Декоративная иконка">
+            <svg class="page__icon page__icon--pan" width="87" height="70" viewBox="0 0 120 96" aria-label="Декоративная иконка">
               <use xlink:href="img/sprite.svg#pan"></use>
             </svg>
           </div>
@@ -860,7 +860,7 @@
         </li>
         <li class="delivery__item">
           <div class="page__circle">
-            <svg class="page__icon" width="72" height="62" viewBox="0 0 98 85" aria-label="Декоративная иконка">
+            <svg class="page__icon page__icon--person" width="72" height="62" viewBox="0 0 98 85" aria-label="Декоративная иконка">
               <use xlink:href="img/sprite.svg#person"></use>
             </svg>
           </div>
@@ -1080,15 +1080,7 @@
   </footer>
   <!-- FOOTER END-->
 
-  <script src="js/lib/siema.min.js"></script>
-  <script>
-    const mySiema = new Siema({
-      perPage: {
-        768: 2, // 2 items for viewport wider than 800px
-        1200: 4 // 3 items for viewport wider than 1240px
-      },
-      loop: true
-    });
-  </script>
+  <script src="js/lib/picturefill.min.js"></script>
+  <script src="js/lib/svgxuse.min.js"></script>
   </body>
 </html>
