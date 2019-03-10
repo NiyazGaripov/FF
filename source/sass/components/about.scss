@@ -33,6 +33,10 @@
   @media ($tablet) {
     margin-bottom: 50px;
   }
+
+  @media ($desktop) {
+    justify-content: space-between;
+  }
 }
 
 .about__item {
@@ -51,6 +55,10 @@
     &:nth-last-child(2) {
       margin-bottom: 0;
     }
+  }
+
+  @media ($desktop) {
+    margin: 0;
   }
 }
 
