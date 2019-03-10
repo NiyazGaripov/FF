@@ -24,6 +24,10 @@
 
   transition: transform 400ms;
 
+  @media ($tablet) {
+    top: -39px;
+  }
+
   @media ($laptop) {
     display: none;
   }
@@ -45,12 +49,33 @@
 
     transition: transform 0.4s;
   }
+
+  @media ($tablet) {
+    top: -61px;
+    right: -48px;
+    left: 50%;
+
+    padding-left: 48px;
+  }
+
+  @media ($laptop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 320px;
+  }
 }
 
 .main-nav__item {
   margin-bottom: 15px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media ($laptop) {
     margin-bottom: 0;
   }
 }
@@ -61,8 +86,22 @@
   color: $darkblue;
   text-decoration: none;
 
-  &--active {
+  outline: none;
+
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
     color: $green;
+  }
+
+  &:active {
+    color: darken($green, 10%);
+  }
+
+  @media ($tablet) {
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 
