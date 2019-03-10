@@ -13,6 +13,16 @@
   @include retina() {
     background-image: url("../img/common-bcg-mobile@2x.jpg");
   }
+
+  @media ($tablet) {
+    padding: 70px 0 50px;
+
+    background-image: url("../img/tariff-bcg-tablet.jpg");
+
+    @include retina() {
+      background-image: url("../img/tariff-bcg-tablet@2x.jpg");
+    }
+  }
 }
 
 .tariff__desc {
@@ -22,6 +32,14 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 36px;
+
+  @media ($tablet) {
+    margin-bottom: 35px;
+
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+  }
 }
 
 .tariff__text {
@@ -30,12 +48,27 @@
 
   font-size: 20px;
   line-height: 26px;
+
+  @media ($tablet) {
+    margin-bottom: 55px;
+
+    font-size: 24px;
+    font-weight: 600;
+  }
 }
 
 .tariff__list {
   @include list;
   margin: 0 auto;
   width: 272px;
+
+  @media ($tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: auto;
+  }
 }
 
 .tariff__item {
@@ -43,6 +76,14 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media ($tablet) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media ($tablet) {
+    width: 30%;
   }
 }
 
@@ -62,6 +103,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media ($tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 465px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .tariff__decore {
@@ -74,6 +129,10 @@
 
 .tariff__picture {
   margin-bottom: 10px;
+
+  @media ($tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .tariff__order {
@@ -81,6 +140,16 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media ($tablet) {
+    display: block;
+  }
+}
+
+.tariff__price {
+  @media ($tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .tariff__price-number {
@@ -88,18 +157,35 @@
 
   font-size: 24px;
   font-weight: 800;
+
+  @media ($tablet) {
+    font-size: 32px;
+  }
 }
 
 .tariff__price-currency {
   font-size: 16px;
+
+  @media ($tablet) {
+    font-size: 24px;
+  }
 }
 
 .tariff__link {
   padding: 12px;
   box-sizing: border-box;
   width: 135px;
+
+  @media ($tablet) {
+    padding: 18px;
+    width: 155px;
+  }
 }
 
 .tariff__delivery {
   margin: 0;
+
+  @media ($tablet) {
+    font-size: 16px;
+  }
 }
