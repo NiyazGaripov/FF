@@ -13,16 +13,34 @@
   @include retina() {
     background-image: url("../img/common-bcg-mobile@2x.jpg");
   }
+
+  @media ($tablet) {
+    padding: 70px 0;
+
+    background-image: url("../img/common-bcg-tablet.jpg");
+
+    @include retina() {
+      background-image: url("../img/common-bcg-tablet@2x.jpg");
+    }
+  }
 }
 
 .advantages__text {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 35px;
 
   font-size: 28px;
   font-weight: 800;
   line-height: 36px;
   color: $white;
+
+  @media ($tablet) {
+    margin-bottom: 65px;
+    width: 670px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .advantages__info {
@@ -31,33 +49,29 @@
   background-color: $white;
 
   border-radius: 12px;
+
+  @media ($tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 48px 28px 60px;
+    box-sizing: border-box;
+    max-width: 800px;
+    min-height: 380px;
+  }
 }
 
 .advantages__approach {
+  position: relative;
+
+  margin-bottom: 60px;
   padding-top: 105px;
 
   background-image: url("../img/main-logo.png");
   background-repeat: no-repeat;
   background-size: 88px 88px;
   background-position: top center;
-}
-
-.advantages__title {
-  margin: 0;
-  margin-bottom: 15px;
-
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 34px;
-}
-
-.advantages__desc {
-  position: relative;
-
-  margin: 0;
-  margin-bottom: 60px;
-
-  font-size: 16px;
 
   &::after {
     content: "";
@@ -72,12 +86,50 @@
     background-color: $darkgray;
 
     opacity: 0.5;
+
+    @media ($tablet) {
+      top: 0;
+      right: -26px;
+      bottom: 0;
+      left: auto;
+
+      width: 1px;
+      height: auto;
+    }
   }
+
+  @media ($tablet) {
+    margin-bottom: 0;
+    width: 46%;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+
+  @media ($tablet) {
+    margin-bottom: 25px;
+  }
+}
+
+.advantages__desc {
+  margin: 0;
+
+  font-size: 16px;
 }
 
 .advantages__list {
   @include list;
   text-align: left;
+
+  @media ($tablet) {
+    width: 45%;
+  }
 }
 
 .advantages__item {
