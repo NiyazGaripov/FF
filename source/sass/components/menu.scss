@@ -60,6 +60,11 @@
     justify-content: space-between;
     width: 668px;
   }
+
+  @media ($desktop) {
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
 
 .menu__card {
@@ -79,6 +84,15 @@
     margin: 0;
     margin-bottom: 30px;
     max-width: 320px;
+  }
+
+  @media ($desktop) {
+    margin-right: 30px;
+    max-width: 385px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 
