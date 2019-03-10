@@ -24,6 +24,16 @@
       background-image: url("../img/customers-bcg-tablet@2x.jpg");
     }
   }
+
+  @media ($desktop) {
+    padding: 70px 0;
+
+    background-image: url("../img/customers-bcg-desktop.jpg");
+
+    @include retina() {
+      background-image: url("../img/customers-bcg-desktop@2x.jpg");
+    }
+  }
 }
 
 .customers__text {
@@ -39,6 +49,10 @@
 
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 65px;
   }
 }
 
