@@ -20,6 +20,10 @@
     margin: 0 auto;
     width: 440px;
   }
+
+  @media ($desktop) {
+    width: 925px;
+  }
 }
 
 .delivery__item {
