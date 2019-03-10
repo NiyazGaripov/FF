@@ -121,6 +121,19 @@
 .menu__link {
   color: $darkblue;
   text-decoration: none;
+
+  outline: none;
+
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
+  &:active {
+    color: darken($green, 10%);
+  }
 }
 
 .menu__choice {
