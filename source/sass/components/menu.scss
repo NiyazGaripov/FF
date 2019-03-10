@@ -3,6 +3,10 @@
   padding-bottom: 45px;
 
   background-color: rgba(236, 239, 241, 0.3);
+
+  @media ($tablet) {
+    padding: 70px 0;
+  }
 }
 
 .menu__title {
@@ -13,6 +17,13 @@
   font-weight: 800;
   line-height: 36px;
   text-align: center;
+
+  @media ($tablet) {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .menu__dishes {
@@ -29,6 +40,13 @@
 
   font-size: 20px;
   font-weight: 600;
+
+  @media ($tablet) {
+    margin-bottom: 25px;
+
+    font-size: 28px;
+    font-weight: 800;
+  }
 }
 
 .menu__list {
@@ -37,6 +55,11 @@
   justify-content: center;
 
   @include list;
+
+  @media ($tablet) {
+    justify-content: space-between;
+    width: 668px;
+  }
 }
 
 .menu__card {
@@ -51,6 +74,12 @@
   border-radius: 12px;
 
   box-shadow: 0 8px 24px 0 rgba(69, 90, 100, 0.16);
+
+  @media ($tablet) {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 320px;
+  }
 }
 
 .menu__content {
