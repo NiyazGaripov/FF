@@ -13,6 +13,13 @@
   @include retina() {
     background-image: url("../img/intro-bcg-tablet@2x.jpg");
   }
+
+  @media ($tablet) {
+    padding-top: 128px;
+    padding-bottom: 70px;
+
+    background-size: cover;
+  }
 }
 
 .intro__wrapper {
@@ -21,6 +28,10 @@
 
 .intro__content {
   width: 272px;
+
+  @media ($tablet) {
+    width: 430px;
+  }
 }
 
 .intro__title {
@@ -29,6 +40,11 @@
 
   font-size: 40px;
   line-height: 48px;
+
+  @media ($tablet) {
+    font-size: 56px;
+    line-height: 64px;
+  }
 }
 
 .intro__slogan {
@@ -36,6 +52,12 @@
   margin-bottom: 40px;
 
   font-size: 20px;
+
+  @media ($tablet) {
+    margin-bottom: 50px;
+
+    font-size: 24px;
+  }
 }
 
 .intro__img {
@@ -55,5 +77,30 @@
 
   @include retina() {
     background-image: url("../img/intro-dish-mobile@2x.png");
+  }
+
+  @media ($tablet) {
+    top: -80px;
+    right: -8%;
+    left: initial;
+
+    margin: 0;
+    width: 320px;
+    height: 475px;
+
+    background-image: url("../img/intro-dish-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina() {
+      background-image: url("../img/intro-dish-tablet@2x.png");
+    }
+  }
+}
+
+.intro__link {
+  @media ($tablet) {
+    margin: 0;
+    max-width: 305px;
   }
 }
