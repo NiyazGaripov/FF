@@ -1,6 +1,9 @@
 .social-networks {
-  @media ($tablet) {
-    width: 380px;
+  @media ($desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
   }
 }
 
@@ -13,6 +16,10 @@
   @media ($tablet) {
     text-align: left;
   }
+
+  @media ($desktop) {
+    margin: 0;
+  }
 }
 
 .social-networks__list {
@@ -23,6 +30,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 380px;
   }
 }
 
