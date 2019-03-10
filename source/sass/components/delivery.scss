@@ -1,5 +1,10 @@
 .delivery {
   padding: 55px 0;
+
+  @media ($tablet) {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
 }
 
 .delivery__list {
@@ -9,6 +14,12 @@
 
   @include list;
   margin-bottom: 40px;
+
+  @media ($tablet) {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 440px;
+  }
 }
 
 .delivery__item {
@@ -19,6 +30,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media ($tablet) {
+    margin-bottom: 70px;
   }
 }
 
@@ -43,13 +58,31 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 36px;
+
+  @media ($tablet) {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .delivery__icon {
   margin-bottom: 25px;
+
+  @media ($tablet) {
+    margin-bottom: 60px;
+
+    width: 185px;
+    height: 160px;
+  }
 }
 
 .delivery__link {
   margin: 0 auto;
   width: 188px;
+
+  @media ($tablet) {
+    width: 230px;
+  }
 }
