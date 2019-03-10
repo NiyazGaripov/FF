@@ -14,6 +14,16 @@
   @include retina() {
     background-image: url("../img/customers-bcg-mobile@2x.jpg");
   }
+
+  @media ($tablet) {
+    padding: 60px 0;
+
+    background-image: url("../img/customers-bcg-tablet.jpg");
+
+    @include retina() {
+      background-image: url("../img/customers-bcg-tablet@2x.jpg");
+    }
+  }
 }
 
 .customers__text {
@@ -23,9 +33,20 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 36px;
+
+  @media ($tablet) {
+    margin-bottom: 35px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .customers__link {
   margin: 0 auto;
   width: 188px;
+
+  @media ($tablet) {
+    width: 230px;
+  }
 }
