@@ -84,11 +84,16 @@
 
 .menu__content {
   padding: 10px 16px 16px;
+
+  @media ($tablet) {
+    padding: 10px 24px 24px;
+  }
 }
 
 .menu__name-dish {
   margin: 0;
   margin-bottom: 30px;
+  padding-right: 30px;
 
   font-size: 16px;
 }
