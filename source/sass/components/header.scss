@@ -12,10 +12,96 @@
 
 .header__wrapper {
   padding: 16px 20px;
+
+  @media ($tablet) {
+    position: relative;
+
+    padding: 11px 48px;
+  }
+
+  @media ($laptop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media ($desktop) {
+    margin: 0 auto;
+    padding: 11px 0;
+    width: 1216px;
+  }
 }
 
 .header__info {
   display: none;
+
+  @media ($tablet) {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 50%;
+
+    display: block;
+  }
+
+  @media ($laptop) {
+    position: static;
+  }
+}
+
+.header__phone {
+  @media ($tablet) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 35px;
+    height: 18px;
+  }
+
+  @media ($laptop) {
+    height: auto;
+  }
+}
+
+.header__phone-icon {
+  @media ($laptop) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+.header__phone-link {
+  @media ($tablet) {
+    display: none;
+  }
+
+  @media ($laptop) {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: $darkblue;
+    text-decoration: none;
+  }
+}
+
+.header__link {
+  @media ($tablet) {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px;
+    width: 215px;
+
+    font-size: 14px;
+  }
+
+  @media ($laptop) {
+    display: none;
+  }
+
+  @media ($desktop) {
+    display: inline-block;
+  }
 }
 
 .header__link-back {
@@ -23,6 +109,8 @@
 
   color: $darkblue;
   text-decoration: none;
+
+  transition: 0.2s;
 
   &::before {
     content: "";
@@ -39,6 +127,8 @@
     border-left: 2px solid $darkgray;
 
     transform: rotate(-45deg);
+
+    transition: 0.2s;
   }
 
   &::after {
@@ -53,5 +143,21 @@
     height: 2px;
 
     background-color: $darkgray;
+
+    transition: 0.2s;
+  }
+
+  &:hover,
+  &:focus {
+    color: $green;
+
+    &::before {
+      border-top: 2px solid $green;
+      border-left: 2px solid $green;
+    }
+
+    &::after {
+      background-color: $green;
+    }
   }
 }
