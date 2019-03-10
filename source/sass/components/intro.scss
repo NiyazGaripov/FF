@@ -19,6 +19,19 @@
     padding-bottom: 70px;
 
     background-size: cover;
+
+    overflow: hidden;
+  }
+
+  @media ($desktop) {
+    padding-top: 145px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/intro-bcg-desktop.jpg");
+
+    @include retina() {
+      background-image: url("../img/intro-bcg-desktop@2x.jpg");
+    }
   }
 }
 
@@ -31,6 +44,10 @@
 
   @media ($tablet) {
     width: 430px;
+  }
+
+  @media ($desktop) {
+    width: 500px;
   }
 }
 
@@ -94,6 +111,23 @@
 
     @include retina() {
       background-image: url("../img/intro-dish-tablet@2x.png");
+    }
+  }
+
+  @media ($desktop) {
+    top: -38px;
+    left: 41%;
+
+    width: 700px;
+    height: 410px;
+
+    background-image: url("../img/intro-dish-desktop.png");
+    background-size: 819px auto;
+    background-position: center;
+
+
+    @include retina() {
+      background-image: url("../img/intro-dish-desktop@2x.png");
     }
   }
 }
