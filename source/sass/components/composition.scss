@@ -14,6 +14,10 @@
 
   border-radius: 8px;
 
+  &--active {
+    display: block;
+  }
+
   @media ($tablet) {
     padding: 25px 24px;
   }
