@@ -1,0 +1,23 @@
+// resolutions
+$desktop: "min-width: 1216px";
+$laptop: "min-width: 1025px";
+$tablet-only: "max-width: 1024px";
+$tablet: "min-width: 768px";
+
+// variables for applying font
+$main-font: "Montserrat", "Arial", "Helvetica", sans-serif;
+
+// variables for colors
+$green: #64dd17;
+$blue: #00b0ff;
+$darkblue: #455a64;
+$orange: #ff9800;
+$violet: #eb72ff;
+$red: #d0021b;
+$gray: #eceff1;
+$darkgray: #b0bec5;
+$white: #ffffff;
+$black: #000000;
+
+// variables for applying colors
+$main-text-color: $darkblue;

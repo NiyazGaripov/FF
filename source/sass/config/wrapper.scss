@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 0 auto;
+  min-width: 272px;
+  max-width: 1216px;
+  width: 85%;
+
+  @media ($tablet) {
+    width: 87%;
+  }
+
+  @media ($desktop) {
+    width: 1216px;
+  }
+}
