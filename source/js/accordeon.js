@@ -13,15 +13,15 @@
           otherContent = list.find('.faq__content'),
           duration = 300;
 
-      if (!item.hasClass('.active')) {
-        items.removeClass('.active');
-        item.addClass('.active');
+      if (!item.hasClass('active')) {
+        items.removeClass('active');
+        item.addClass('active');
 
         otherContent.stop(true,true).slideUp(duration);
         content.stop(true,true).slideDown(duration);
       } else {
         content.stop(true,true).slideUp(duration);
-        item.stop(true,true).removeClass('.active');
+        item.stop(true,true).removeClass('active');
       }
 
     })
