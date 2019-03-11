@@ -1,0 +1,82 @@
+.slider {
+  position: relative;
+}
+
+.slider__contol {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: $darkblue;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid $white;
+    border-left: 2px solid $white;
+
+    @media ($tablet) {
+      top: 23px;
+    }
+  }
+
+  &--prev {
+    left: -12px;
+
+    &::before {
+      right: 6px;
+
+      transform: rotate(-45deg);
+
+      @media ($tablet) {
+        right: 22px;
+      }
+    }
+
+    @media ($tablet) {
+      left: -27px;
+    }
+  }
+
+  &--next {
+    right: -12px;
+
+    &::before {
+      left: 7px;
+
+      transform: rotate(135deg);
+
+      @media ($tablet) {
+        left: 22px;
+      }
+    }
+
+    @media ($tablet) {
+      right: -34px;
+    }
+  }
+
+  @media ($tablet) {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.slider__list {
+  display: flex;
+
+  @include list;
+}
