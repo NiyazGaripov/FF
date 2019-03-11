@@ -28,7 +28,7 @@
             <use xlink:href="img/sprite.svg#food-family"></use>
           </svg>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню">
             <svg class="hamburger" width="30" height="20" viewBox="20 20 60 60" >
               <path class="hamburger__line hamburger__line--top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -754,7 +754,7 @@
         <div class="slider">
           <button class="slider__contol slider__contol--prev" type="button" aria-label="Кнопка переключения слайда влево"></button>
           <button class="slider__contol slider__contol--next" type="button" aria-label="Кнопка переключения слайда вправо"></button>
-          <ul class="slider__list siema">
+          <ul class="slider__list">
             <li class="slider__item">
               <picture class="slider__picture">
                 <source type="image/webp" srcset="img/webp/review.webp 1x, img/webp/review@2x.webp 2x">
@@ -883,29 +883,11 @@
       <h2 class="faq__title">Частые вопросы</h2>
       <ul class="faq__list">
         <li class="faq__item">
-          <label class="faq__label">
-            Тарифы
-            <input class="visually-hidden faq__tariff" type="radio" name="tab">
-          </label>
+          <a class="faq__item-link" href="#">Тарифы</a>
         </li>
-        <li class="faq__item faq__item--active">
-          <label class="faq__label">
-            Продукты
-            <input class="visually-hidden faq__product" type="radio" name="tab">
-          </label>
-        </li>
-        <li class="faq__item">
-          <label class="faq__label">
-            Доставка
-            <input class="visually-hidden faq__delivery" type="radio" name="tab">
-          </label>
-        </li>
-        <li class="faq__item">
-          <label class="faq__label">
-            Хранение
-            <input class="visually-hidden faq__storage" type="radio" name="tab">
-          </label>
-        </li>
+        <li class="faq__item faq__item--active">Продукты</li>
+        <li class="faq__item">Доставка</li>
+        <li class="faq__item">Хранение</li>
       </ul>
       <div class="faq__container">
         <ul class="faq__answers faq__answers--tariff">
@@ -938,8 +920,8 @@
             </div>
           </li>
         </ul>
-        <ul class="faq__answers faq__answers--product">
-          <li class="faq__answer faq__answer--active js-accordion">
+        <ul class="faq__answers faq__answers--product faq__answers--active">
+          <li class="faq__answer js-accordion">
             <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
             <h4 class="faq__subtitle js-accordion-header">Используете ли вы сахар или сахарозаменитель. Если да, то какой?</h4>
             <div class="faq__content js-accordion-content">
@@ -1082,5 +1064,7 @@
 
   <script src="js/lib/picturefill.min.js"></script>
   <script src="js/lib/svgxuse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.min.js"></script>
   </body>
 </html>
