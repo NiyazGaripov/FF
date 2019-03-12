@@ -75,8 +75,37 @@
   }
 }
 
+.slider__wrapper {
+  margin: 0 auto 35px;
+  width: 200px;
+  height: 356px;
+
+  overflow: hidden;
+}
+
 .slider__list {
-  display: flex;
+  position: relative;
+  left: 0;
 
   @include list;
+  width: 2000px;
+
+  transition: 0.3s;
+}
+
+.slider__item {
+  float: left;
+}
+
+.slider__picture {
+  display: block;
+  margin-right: 10px;
+  width: 200px;
+  height: 356px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
