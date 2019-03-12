@@ -34,6 +34,10 @@
   overflow: scroll;
   max-width: 460px;
   margin: 0 auto 50px;
+
+  @media ($tablet) {
+    overflow: hidden;
+  }
 }
 
 .faq__item {
@@ -178,7 +182,7 @@
 
   @media ($tablet) {
     padding-top: 25px;
-    padding-right: 180px;
+    padding-right: 65px;
   }
 
   @media ($desktop) {

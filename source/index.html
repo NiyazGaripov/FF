@@ -38,13 +38,13 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Меню на неделю</a>
+              <a class="main-nav__link page__link--menu" href="#">Меню на неделю</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Тарифы</a>
+              <a class="main-nav__link page__link--tariff" href="#">Тарифы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">FAQ</a>
+              <a class="main-nav__link page__link--faq" href="#">FAQ</a>
             </li>
           </ul>
         </nav>
@@ -118,7 +118,7 @@
             <p class="about__text">Большие порции в&nbsp;каждом тарифе</p>
           </li>
         </ul>
-        <a class="link about__link" href="#">В меню</a>
+        <a class="link about__link page__link--menu" href="#">В меню</a>
       </div>
     </section>
     <!-- ABOUT END-->
@@ -685,7 +685,7 @@
                   <span class="tariff__price-number">1 990</span>
                   <span class="tariff__price-currency">₽</span>
                 </div>
-                <a class="link tariff__link" href="#" target="blank">Заказать</a>
+                <a class="link tariff__link" href="form.html" target="blank">Заказать</a>
               </div>
             </div>
             <p class="tariff__delivery">+350 ₽ за доставку</p>
@@ -708,7 +708,7 @@
                   <span class="tariff__price-number">2 990</span>
                   <span class="tariff__price-currency">₽</span>
                 </div>
-                <a class="link tariff__link" href="#" target="blank">Заказать</a>
+                <a class="link tariff__link" href="form.html" target="blank">Заказать</a>
               </div>
             </div>
             <p class="tariff__delivery">+350 ₽ за доставку</p>
@@ -737,7 +737,7 @@
                   <span class="tariff__price-number">4 990</span>
                   <span class="tariff__price-currency">₽</span>
                 </div>
-                <a class="link tariff__link" href="#" target="blank">Заказать</a>
+                <a class="link tariff__link" href="form.html" target="blank">Заказать</a>
               </div>
             </div>
             <p class="tariff__delivery">+350 ₽ за доставку</p>
@@ -785,7 +785,7 @@
             </li>
           </ul>
         </div>
-        <a class="link reviews__link" href="#">Instagram</a>
+        <a class="link reviews__link" href="https://www.instagram.com/ff_msc/" target="blank">Instagram</a>
       </div>
     </section>
   <!-- REVIEWS END-->
@@ -872,7 +872,7 @@
         <svg class="delivery__icon" width="115" height="100" viewBox="0 0 185 157" aria-label="Декоративная иконка">
           <use xlink:href="img/sprite.svg#delivery"></use>
         </svg>
-        <a class="link delivery__link" href="#" target="blank">Заказать</a>
+        <a class="link delivery__link" href="form.html" target="blank">Заказать</a>
       </div>
     </div>
   </section>
@@ -898,125 +898,150 @@
       <div class="faq__container">
         <ul class="faq__answers faq__answers--tariff">
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №1 тариф
+            <h4 class="faq__subtitle">Что входит в корзину?
               <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
             </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cupiditate.</p>
+              <p class="faq__text">В корзину входят: 2 супа, 2 салата, 2 гарнира, 3 горячих блюда, десерт и напиток.</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №2 тариф
+            <h4 class="faq__subtitle">Как изменения в меню повлияют на цену?
               <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
             </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores molestiae, suscipit, eligendi repellendus dignissimos dolore qui in minus quam a, ea dolor ratione ipsam iure vel numquam? Cum veniam beatae odio rem incidunt animi nostrum impedit quae. Illum possimus facilis nemo obcaecati et rerum error similique expedita. Molestias, optio.</p>
+              <p class="faq__text">В рамках меню вы можете вносить изменения путём увеличения/уменьшения порций, замены блюд, удаления блюд, исключения ингредиентов. Каждый случай уникален, поэтому вопрос окончательной стоимости мы решаем в индивидуальном порядке для каждого случая.</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №3 тариф
+            <h4 class="faq__subtitle">Какие бонусы дает подписка?
               <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
             </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet fugit, voluptas voluptatum sunt, explicabo ad magnam tenetur repellat illum tempore a recusandae exercitationem beatae laborum nobis. Corporis et maiores debitis!</p>
+              <p class="faq__text">Оформление подписки удобно и выгодно по нескольким причинам:
+                Это выгодно! При оформление подписки сразу на 4 недели мы дарим вам скидку 20% на наши корзины.
+                Это удобно! За вами закрепляется определённый день доставки, который Вы вправе изменить при необходимости, предупредив нас за 2 дня.</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №4 тариф
+            <h4 class="faq__subtitle">Что если мне не подходит цена?
               <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
             </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet.</p>
+              <p class="faq__text">Мы открыты для диалога. Мы можем скорректировать меню и предложить вам лучшую цену.</p>
             </div>
           </li>
         </ul>
         <ul class="faq__answers faq__answers--product active">
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Используете ли
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              вы сахар или сахарозаменитель. Если да, то какой?</h4>
+            <h4 class="faq__subtitle">Кто и где готовит мою еду?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">В меню линейки FIT сахар заменен на натуральный сахарозаменитель "Fitparad 7". В меню линейки POWER в некоторых блюдах содержится сахар в малых дозах. Подробный состав вы всегда можете уточнить у наших специалистов call-центра.</p>
+              <p class="faq__text">Вашу еду готовят профессиональные повара с опытом работы не менее 3-х лет в ведущих ресторанах Москвы под руководством шеф-повара Антона Шумского (Чайхона, Гамбит, Дель Мар, Пантон).</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Какие молочные
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              продукты вы используете для готовки блюд?</h4>
+            <h4 class="faq__subtitle">Сколько видов мяса/рыбы?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, sint itaque? Accusantium ipsam recusandae consequatur?</p>
+              <p class="faq__text">В каждой корзине вы найдете 3 вида мяса или рыбы в зависимости от актуального меню на неделю.</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Какие молочные
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              продукты вы используете для готовки блюд?</h4>
+            <h4 class="faq__subtitle">Кто поставщик мяса/рыбы/овощей?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p class="faq__text">Подмосковные фермерские хозяйства, а также компания “Сердекс” (лидер ресторанных поставок в Москве).</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Полезное питани
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              е — это вкусно?</h4>
+            <h4 class="faq__subtitle">Кто и как планирует меню?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit.</p>
+              <p class="faq__text">Меню разрабатывает шеф-повар Антон Шумский совместно с технологами Фуд Фэмили.</p>
+            </div>
+          </li>
+          <li class="faq__answer">
+            <h4 class="faq__subtitle">Какие порции?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
+            <div class="faq__content">
+              <p class="faq__text">Мы не делим блюда на порции. В каждой корзине вы найдете определённый объем блюд, соответствующий выбранной корзине (4кг/8кг/16кг). Вы можете самостоятельно разделить еду на удобные вам порции.</p>
+            </div>
+          </li>
+          <li class="faq__answer">
+            <h4 class="faq__subtitle">Что если я не ем какие-то продукты?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
+            <div class="faq__content">
+              <p class="faq__text">Вы всегда можете сделать замену блюда на другое в рамках действующего меню на неделю. Мы без проблем исключим любые ингредиенты по вашей просьбе.</p>
+            </div>
+          </li>
+          <li class="faq__answer">
+            <h4 class="faq__subtitle">Как часто меняется меню?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
+            <div class="faq__content">
+              <p class="faq__text">Меню обновляется каждую неделю. На 80% меню состоит из известных и проверенных блюд. На 20% из новых или экспериментальных позиций, жаждущих вашего признания.</p>
+            </div>
+          </li>
+          <li class="faq__answer">
+            <h4 class="faq__subtitle">Нужно ли готовить еду от Фуд Фэмили?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
+            <div class="faq__content">
+              <p class="faq__text">Еда доставляется в готовом виде. Достаточно разогреть в СВЧ-печи.</p>
             </div>
           </li>
         </ul>
         <ul class="faq__answers faq__answers--delivery">
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №1 доста
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              вка</h4>
+            <h4 class="faq__subtitle">В какие дни есть доставка?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, corporis. Eaque voluptatem natus facere debitis alias nesciunt quas dolorem vel!</p>
+              <p class="faq__text">Можем привезти заказ в любой удобный для вас день. Заказы с доставкой "на завтра" принимаем до 20.00 часов текущего дня.</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №2 доста
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              вка</h4>
+            <h4 class="faq__subtitle">Во сколько будет курьер?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ut sit totam asperiores, optio commodi facilis voluptate reiciendis facere assumenda explicabo dolores obcaecati vitae dolor modi illo fugiat. Accusamus numquam deserunt incidunt pariatur nam blanditiis voluptatum ipsum minus porro minima!</p>
+              <p class="faq__text">Наши курьеры приезжают вечером, в интервале 20-23 часа. Это обусловлено несколькими причинами:
+                Мы готовим еду в день вашей доставки.
+                Вечерний интервал доставки наиболее удобен для работающих и занятых людей
+              </p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №3 доста
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              вка</h4>
+            <h4 class="faq__subtitle">Как я могу оплатить доставку?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem, ipsum.</p>
-            </div>
-          </li>
-          <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №4 доста
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              вка</h4>
-            <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+              <p class="faq__text">Оплатить можно онлайн, безналичным расчетом через терминал или наличными курьеру.</p>
             </div>
           </li>
         </ul>
         <ul class="faq__answers faq__answers--storage">
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №1 хране
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              ние</h4>
+            <h4 class="faq__subtitle">Как и сколько хранить продукты?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore odit suscipit soluta ducimus.</p>
+              <p class="faq__text">Продукты необходимо хранить в холодильнике при температуре +2 +4С. Срок хранения и рекомендации по употреблению вы найдете в нашем меню.</p>
             </div>
           </li>
           <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №2 хране
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              ние</h4>
+            <h4 class="faq__subtitle">Как продукты не портятся в пути?
+              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>
+            </h4>
             <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem autem fugit fuga quisquam perferendis ad, nulla doloribus recusandae.</p>
-            </div>
-          </li>
-          <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №3 хране
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              ние</h4>
-            <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis temporibus, recusandae odit dignissimos fugiat labore culpa natus sint laboriosam, vero quibusdam esse incidunt?</p>
-            </div>
-          </li>
-          <li class="faq__answer">
-            <h4 class="faq__subtitle">Вопрос №4 хране
-              <button class="faq__close" type="button" aria-label="Кнопка закрытия вопроса"></button>              ние</h4>
-            <div class="faq__content">
-              <p class="faq__text">Lorem ipsum dolor sit amet.</p>
+              <p class="faq__text">Наши курьеры работают на специальных автомобилях с холодильными установками или холодильными боксами.</p>
             </div>
           </li>
         </ul>
@@ -1029,7 +1054,7 @@
     <div class="wrapper customers__wrapper">
       <h2 class="visually-hidden">Клиенты Food Family</h2>
       <p class="customers__text">Более <span class="page__text">1000</span> довольных клиентов</p>
-      <a class="link customers__link" href="#" target="blank">Заказать</a>
+      <a class="link customers__link" href="form.html" target="blank">Заказать</a>
     </div>
   </section>
   <!-- CUSTOMERS END-->
