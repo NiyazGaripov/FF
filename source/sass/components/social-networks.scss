@@ -1,9 +1,17 @@
 .social-networks {
+  @media ($tablet) {
+    width: 380px;
+  }
+
+  @media ($laptop) {
+    width: 565px;
+  }
+
   @media ($desktop) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 650px;
+    width: 840px;
   }
 }
 
@@ -27,10 +35,17 @@
 
   @media ($tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 380px;
+  }
+
+  @media ($laptop) {
+    justify-content: space-between;
+  }
+
+  @media ($desktop) {
+    width: 565px;
   }
 }
 
@@ -41,7 +56,7 @@
     margin-bottom: 0;
   }
 
-  @media ($tablet) {
+  @media ($laptop) {
     margin-bottom: 0;
   }
 }
